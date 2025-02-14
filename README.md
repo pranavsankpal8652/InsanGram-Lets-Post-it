@@ -1,4 +1,4 @@
-# **InsanGram | Let's Post It** 🚀  
+# **InsanGram | Let's Post It** 📤📥  
 
 A **social media application** where users can **create posts** with images/videos, view, like, and comment on posts. It updates in **real-time using APIs** .  
 
