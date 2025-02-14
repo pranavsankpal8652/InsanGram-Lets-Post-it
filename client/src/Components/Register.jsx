@@ -44,6 +44,7 @@ function Register({ Modal }) {
           <div className="mb-4">
             <label className="block text-sm font-bold text-gray-700 mb-2" htmlFor="username">Username</label>
             <input
+            autoFocus
               type="text"
               name="username"
               value={form.username}

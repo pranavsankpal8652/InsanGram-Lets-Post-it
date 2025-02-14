@@ -55,6 +55,7 @@ function Login() {
           <div className="mb-4">
             <label className="block text-sm font-bold md:text-gray-700  text-gray-400 mb-2" htmlFor="username">Username</label>
             <input
+             autoFocus
               type="username"
               name="username"
               value={form.username}
@@ -73,10 +74,10 @@ function Login() {
             />
             <button type='button' className=' absolute top-[60%] right-2 cursor-pointer' onMouseDown={()=>setshowPassword(true)} onMouseUp={()=>setshowPassword(false)}><FaRegEye/></button>
           </div>
-          <button type='submit' className="w-full bg-green-600 text-white px-3 py-2 rounded-lg shadow-lg hover:bg-green-700 transition duration-300" >
+          <button type='submit' className="cursor-pointer w-full bg-green-600 text-white px-3 py-2 rounded-lg shadow-lg hover:bg-green-700 transition duration-300" >
             Login
           </button>
-          <div className='text-center'>
+          <div className='text-center my-4'>
             <Link to='forgotpass'>
               <span className='text-blue-400 cursor-pointer'>forgot password?</span>
             </Link>
