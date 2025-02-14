@@ -11,7 +11,6 @@ A **social media application** where users can **create posts** with images/vide
 ✅ **Like & Comment** – Engage with posts by liking and commenting  
 ✅ **Manage Posts** – Edit or delete your own posts  
 ✅ **Real-time Updates** 
-
 ✅ **Password Reset using Email**
 
 ---
