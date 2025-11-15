@@ -1,21 +1,15 @@
-const express=require('express')
-const { AuthRoutes } = require('./AuthRoutes')
+const express = require("express");
+const { AuthRoutes } = require("./AuthRoutes");
 
-const { OwnerPostRoutes } = require('./UserPostsRoutes')
-const {  PostRoutes } = require('./postRoutes')
+const { OwnerPostRoutes } = require("./UserPostsRoutes");
+const { PostRoutes } = require("./PostRoutes");
 
+const mainRoutes = express.Router();
 
+mainRoutes.use("/user", AuthRoutes);
 
-const mainRoutes=express.Router()
+mainRoutes.use("/ownerPosts", OwnerPostRoutes);
 
-mainRoutes.use('/user',AuthRoutes)
+mainRoutes.use("/posts", PostRoutes);
 
-mainRoutes.use('/ownerPosts',OwnerPostRoutes)
-
-mainRoutes.use('/posts',PostRoutes)
-
-
-
-
-
-module.exports={mainRoutes}
+module.exports = { mainRoutes };
